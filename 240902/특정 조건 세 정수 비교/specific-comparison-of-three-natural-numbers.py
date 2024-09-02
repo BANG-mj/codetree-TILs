@@ -5,12 +5,16 @@ b = int(arr[1])
 c = int(arr[2])
 min = 0
 
-if a<b and a<c:
-    min = a
-elif b<a and b<c:
-    min = b
-else:
-    min = c
+if a<=b:
+    if a<=c:
+        min = a
+    elif a>c:
+        min = c
+elif a>b:
+    if b<=c:
+        min = b
+    elif b>c:
+        min = c
 
 if a==min:
     print(1, end=' ')

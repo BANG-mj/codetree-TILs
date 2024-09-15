@@ -2,9 +2,9 @@
 
 inp = input()
 arr = inp.split()
-a = arr[0]
-b = arr[1]
-c = arr[2]
+a = int(arr[0])
+b = int(arr[1])
+c = int(arr[2])
 
 if ((a > b) & (a > c)):
     print(a)
